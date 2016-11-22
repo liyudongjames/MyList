@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@id/article_comment_detail_head_imageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="centerCrop"
+            app:placeholderImageScaleType="fitCenter"
+            app:placeholderImage = "@drawable/llist_img_default_avatar"
+            app:fadeDuration="1000"
+            fresco:roundAsCircle="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="Only肉肉"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/article_comment_detail_head_imageView"
+            android:layout_marginLeft="18dp"
+            android:id="@id/article_comment_detail_nikename_textView" />
+
+        <TextView
+            android:text="2小时前"
+            android:textColor="@android:color/darker_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/article_comment_detail_nikename_textView"
+            android:layout_alignLeft="@id/article_comment_detail_nikename_textView"
+            android:textSize="10dip"
+            android:id="@id/article_comment_detail_time_textView" />
+
+
+        <TextView
+            android:text="看起来很不错的样子"
+            android:maxLines="100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/article_comment_detail_time_textView"
+            android:layout_alignLeft="@id/article_comment_detail_time_textView"
+            android:id="@id/article_comment_detail_comment_content" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/thumb_up"
+            android:id="@id/article_comment_detail_reply_imageView"
+            android:layout_toLeftOf="@id/article_comment_detail_likeCount_textView"
+            android:layout_marginRight="10dp"
+            />
+
+        <TextView
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10dip"
+            android:id="@id/article_comment_detail_likeCount_textView"
+            android:textColor="@android:color/darker_gray"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="3dp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_comment_reply"
+            android:id="@id/article_comment_detail_like_imageView"
+            android:layout_toLeftOf="@id/article_comment_detail_reply_imageView"
+            android:layout_marginRight="30dp"
+            />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/xuxian"
+        ></View>
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        xmlns:fresco="http://schemas.android.com/apk/res-auto"
+        android:id="@id/collection_listview_item_imageView"
+        android:layout_width="100dp"
+        android:background="@android:drawable/arrow_down_float"
+        fresco:placeholderImage="@drawable/loading_placeholder"
+        fresco:placeholderImageScaleType="fitCenter"
+        fresco:fadeDuration="1000"
+        android:layout_height="80dp" />
+    <TextView
+        android:id="@id/collection_listView_item_tittle_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="买净化器不能只看CADR值！一篇所有人都能看懂的挑选指南"
+        android:maxLines="2"
+        android:layout_toRightOf="@id/collection_listview_item_imageView"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+    <ImageView
+        android:id="@id/collection_like_imageView"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/home_card_img_heart_hl"
+        android:layout_alignBottom="@id/collection_listview_item_imageView"
+        android:layout_toRightOf="@id/collection_listview_item_imageView"
+        />
+
+    <TextView
+        android:id="@id/collection_like_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="2dp"
+        android:text="49"
+        android:layout_alignBottom="@id/collection_listview_item_imageView"
+        android:layout_toRightOf="@id/collection_like_imageView"/>
+
+    <ImageView
+        android:id="@id/collection_view_imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@id/collection_like_textView"
+        android:layout_alignBottom="@id/collection_listview_item_imageView"
+        android:background="@drawable/home_img_eye_nor"/>
+
+    <TextView
+        android:id="@id/collection_view_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="2dp"
+        android:layout_toRightOf="@id/collection_view_imageView"
+        android:layout_alignBottom="@id/collection_listview_item_imageView"
+        android:text="2691"/>
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="30dp" android:layout_width="match_parent"
+    android:layout_height="105dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/img_ranking_review_tag"
+        android:layout_gravity="right|bottom"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@id/main_head_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"></android.support.v7.widget.RecyclerView>
+
+
+
+</FrameLayout>

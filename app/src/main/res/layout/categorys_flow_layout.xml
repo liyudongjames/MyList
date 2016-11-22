@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@id/category_flow_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="30dp"
+        android:text="刀剪"/>
+
+    <com.bwf.qingdan.gui.view.FlowLayout
+        xmlns:myapp="http://schemas.android.com/apk/res/com.bwf.qingdan"
+        android:id="@id/category_flow_flowlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.bwf.qingdan.gui.view.FlowLayout>
+
+</LinearLayout>
